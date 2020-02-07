@@ -1,7 +1,13 @@
+<script>
+
+</script>
+
 <style type="text/scss">
+  @import '../styles/variables.scss';
+
   div {
     > p {
-      color: red;
+      color: $primary-color;
     }
   }
 </style>

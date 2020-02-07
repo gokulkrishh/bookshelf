@@ -1,20 +1,19 @@
 <script>
-  import { Router, Link, Route } from "svelte-routing";
-  import Home from "./routes/Home.svelte";
+  import { Router, Link, Route } from 'svelte-routing';
+  import Layout from './components/Layout.svelte';
+  import Home from './routes/Home.svelte';
 
-  export let url = "";
+  export let url = '';
 </script>
 
 <style>
 
 </style>
 
-<main>
-  <Router {url}>
-    <div>
-      <Route path="/">
-        <Home />
-      </Route>
-    </div>
-  </Router>
-</main>
+<Router {url}>
+  <Layout>
+    <Route path="/">
+      <Home />
+    </Route>
+  </Layout>
+</Router>
