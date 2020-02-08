@@ -29,6 +29,6 @@
   "dependencies": {
     "modern-normalize": "^0.6.0",
     "sirv-cli": "^0.4.4",
-    "svelte-routing": "^1.4.0"
+    "yrv": "^0.0.18"
   }
 }
