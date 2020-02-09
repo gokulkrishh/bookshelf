@@ -1,5 +1,5 @@
 import React, { Suspense, lazy } from 'react'
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 import Layout from './components/Layout'
 
@@ -12,9 +12,11 @@ const routes = () => {
     <Layout>
       <Router>
         <Suspense fallback={<div>Loading...</div>}>
-          <Route exact path="/" component={Home} />
-          <Route path="/mybooks" component={MyBooks} />
-          <Route path="/settings" component={Settings} />
+          <Switch>
+            <Route exact path="/" component={Home} />
+            <Route path="/mybooks" component={MyBooks} />
+            <Route path="/settings" component={Settings} />
+          </Switch>
         </Suspense>
       </Router>
     </Layout>
