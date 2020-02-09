@@ -8,10 +8,10 @@ const Sidebar = () => {
           <a href="/">Home</a>
         </li>
         <li>
-          <a href="/">My Books</a>
+          <a href="/mybooks">My Books</a>
         </li>
         <li>
-          <a href="/">Settings</a>
+          <a href="/settings">Settings</a>
         </li>
       </ul>
     </div>
